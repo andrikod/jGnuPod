@@ -29,14 +29,15 @@ The project is an Eclipse project.
 To generate the jar, use the build.xml and run Ant Build.
 
 Run the jar:
+```
 java -jar jGnupod.jar
-
+```
 
 
 Required Installed Packages
 -----
 * GNUpod tools
-For Ubuntu: sudo apt-get install gnupod-tools
+For Ubuntu: `sudo apt-get install gnupod-tools`
 
 
 Perl Incompatibility
@@ -44,21 +45,30 @@ Perl Incompatibility
 Due to an incompatibility issue, GNUpod tools don't work properly with perl5.
 The following error occurs:
 
+```
 defined(@array) is deprecated at /usr/share/perl5/GNUpod/XMLhelper.pm line 362.
         (Maybe you should just omit the defined()?)
+```
 
 After some research I found out that the problem is known (https://rt.cpan.org/Public/Bug/Display.html?id=79658),
 and the reason is the deprecated defined method. I solved the problem by modifying directly the file /usr/share/perl5/GNUpod/XMLhelper.pm
 replacing:
+
+```
     if (defined(@{$XDAT->{playlists}->{data}->{$current_plname}})) { #the playlist is not empty
+```
 
 to:
+
+```
    if (@{$XDAT->{playlists}->{data}->{$current_plname}}) { #the playlist is not empty
+```
 
 
 Disclaimer
 -----
 The purpose of this project was only a quick fix for my every day problem. The code maybe be ugly/old/dirty, it should have been a maven project and not an Eclipse, but I no longer use the iPod and I have no intention to keep working on it. Mostly a backup.
+
 
 
 Links
