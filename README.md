@@ -21,6 +21,15 @@ Although GNUpod provides a lot of operations, jGnuPod supports only the ones, wh
 
 That's it..
 
+Install/Run
+-----
+The project is an Eclipse project. 
+To generate the jar, use the build.xml and run Ant Build.
+
+Run the jar:
+java -jar jGnupod.jar
+
+
 
 Required Installed Packages
 -----
@@ -47,7 +56,7 @@ to:
 
 Disclaimer
 -----
-The purpose of this project was only a quick fix for my every day problem. The code maybe be ugly/old/dirty, but I no longer use the iPod.
+The purpose of this project was only a quick fix for my every day problem. The code maybe be ugly/old/dirty, it should have been a maven project and not an Eclipse, but I no longer use the iPod and I have no intention to keep working on it. Mostly a backup.
 
 
 Links
