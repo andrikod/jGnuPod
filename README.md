@@ -7,7 +7,9 @@ jGnuPod is a graphical interface written in Java Swing for the GNUpod command li
 Background
 -----
 Around 2007 I got an iPod Nano 2th Generation as a present. As a linux user, I found out that they were a plenty of tools for managing an iPod (gtkpod, amarok) for linux. However after some years, it got very frustrating: saving music to iPod was causing constant random crashes, or the iPod managers were focusing on features like podcasts or smartlists, which I wasn't/still am not using.
+
 I just wanted to drag-and-drop some folders into iPod and play. That's it..
+
 GNUpod was exactly what I needed, but unfortunatelly there was no GUI. So, I decided to implement one.
 
 
