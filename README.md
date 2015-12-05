@@ -18,6 +18,7 @@ Although GNUpod provides a lot of operations, jGnuPod supports only the ones, wh
 * Display saved files
 * Add new music
 * Delete music
+
 That's it..
 
 
